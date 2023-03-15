@@ -25,4 +25,5 @@ jobs:
           pull_request_team_reviewers: "justice-league, other_team"
           pull_request_labels: "dependencies, automated"
           extra_workflow_locations: "outside.yaml, another/two.yaml"
+          release_types: "minor, patch"
 
