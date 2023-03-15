@@ -16,10 +16,10 @@ jobs:
         uses: saadmk11/github-actions-version-updater@use-pydantic
         with:
           token: ${{ secrets.WORKFLOW_SECRET }}
-          committer_username: ''
-          committer_email: ''
-          commit_message: ''
-          pull_request_title: ''
+          committer_username: 'TEST'
+          committer_email: 'TEST@gdg.com'
+          commit_message: 'TEST'
+          pull_request_title: 'TEST'
           ignore: 'actions/checkout@v2,'
           pull_request_user_reviewers: "octocat, hubot, other_user"
           pull_request_team_reviewers: '["justice-league", "other_team"]'
