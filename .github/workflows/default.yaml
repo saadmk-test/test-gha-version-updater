@@ -1,4 +1,4 @@
-name: "branch-sha"
+name: "default"
 
 on:
   workflow_dispatch:
