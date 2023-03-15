@@ -25,7 +25,7 @@ jobs:
           pull_request_team_reviewers: '{"justice-league", "other_team"}'
           pull_request_labels: "dependencies, automated"
           extra_workflow_locations: "outide.yaml, anther/two.yaml"
-          release_types: "minor, patch, new"
-          update_version_with: 'release-comit-sha'
+          release_types: ""
+          update_version_with: ''
           pull_request_branch: "test-branch"
           skip_pull_request: 'fse'
