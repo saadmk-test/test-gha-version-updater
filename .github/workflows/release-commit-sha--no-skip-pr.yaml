@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.WORKFLOW_SECRET }}
 
       - name: Run GitHub Action Updater
-        uses: saadmk11/github-actions-version-updater@use-pydantic
+        uses: saadmk11/github-actions-version-updater@e9362a3a6af5b942b421fd1b66fe4b7fa0ca7714
         with:
           token: ${{ secrets.WORKFLOW_SECRET }}
           commit_message: "Custom Commit Message"
