@@ -18,4 +18,6 @@ jobs:
           token: ${{ secrets.WORKFLOW_SECRET }}
           committer_username: 'Test'
           committer_email: 'test@test.com'
+          commit_message: 'Commit Message'
+          pull_request_title: 'Pull Request Title'
 
