@@ -16,4 +16,6 @@ jobs:
         uses: saadmk11/github-actions-version-updater@use-pydantic
         with:
           token: ${{ secrets.WORKFLOW_SECRET }}
+          committer_username: 'Test'
+          committer_email: 'test@test.com'
 
