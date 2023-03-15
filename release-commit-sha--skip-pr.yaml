@@ -1,0 +1,22 @@
+name: "SKIP: release-commit-sha"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+
+      - name: Run GitHub Action Updater
+        uses: saadmk11/github-actions-version-updater@handle-sub-dir-actions
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+          commit_message: "Custom Commit Message"
+          pull_request_title: "Custom GHA Update"
+          skip_pull_request: 'true'
+          update_version_with: "release-commit-sha"
+          release_types: "major, patch, minor"

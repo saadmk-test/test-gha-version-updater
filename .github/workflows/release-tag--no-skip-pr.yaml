@@ -1,0 +1,23 @@
+name: "release-tag"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+
+      - name: Run GitHub Actions Version Updater
+        uses: saadmk11/github-actions-version-updater@handle-sub-dir-actions
+        with:
+          committer_username: 'test'
+          committer_email: 'test@test.com'
+          commit_message: 'Github Actions versions have changed'
+          pull_request_title: 'Github Actions versions have changed'
+          token: ${{ secrets.WORKFLOW_SECRET }}
+          pull_request_branch: "actions-update"

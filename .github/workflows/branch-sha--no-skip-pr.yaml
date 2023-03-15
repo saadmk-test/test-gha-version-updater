@@ -1,0 +1,25 @@
+name: "branch-sha"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+
+      - name: Run GitHub Action Updater
+        uses: saadmk11/github-actions-version-updater@handle-sub-dir-actions
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+          commit_message: "Custom Commit Message"
+          pull_request_title: "Custom GHA Update"
+          skip_pull_request: 'false'
+          update_version_with: "default-branch-sha"
+          release_types: "patch, minor"
+          pull_request_branch: "actions-update"
+          pull_request_labels: "awaiting changes, good first issue, help wanted, this is not a label"
