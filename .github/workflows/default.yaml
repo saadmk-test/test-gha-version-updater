@@ -22,7 +22,7 @@ jobs:
           pull_request_title: ''
           ignore: 'actions/checkout@v2,'
           pull_request_user_reviewers: "octocat, hubot, other_user"
-          pull_request_team_reviewers: '{"justice-league", "other_team"}'
+          pull_request_team_reviewers: '["justice-league", "other_team"]'
           pull_request_labels: "dependencies, automated"
           extra_workflow_locations: "outide.yaml, anther/two.yaml"
           release_types: "all"
