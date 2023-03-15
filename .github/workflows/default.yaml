@@ -28,4 +28,4 @@ jobs:
           release_types: "minor, patch, new"
           update_version_with: 'release-comit-sha'
           pull_request_branch: "test-branch"
-          skip_pull_request: 'false'
+          skip_pull_request: 'fse'
