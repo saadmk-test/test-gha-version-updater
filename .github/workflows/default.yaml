@@ -27,4 +27,4 @@ jobs:
           extra_workflow_locations: "outide.yaml, anther/two.yaml"
           release_types: "all"
           pull_request_branch: "test-branch"
-          skip_pull_request: 'fse'
+          skip_pull_request: 'false'
