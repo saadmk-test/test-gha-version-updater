@@ -11,13 +11,13 @@ jobs:
       options: --privileged
     steps:
     - uses: actions/checkout@v2
-    - uses: flatpak/flatpak-github-actions/flatpak-builder@v1
+    - uses: flatpak/flatpak-github-actions/flatpak-builder@v5
       name: "Build"
       with:
         bundle: palette.flatpak
         manifest-path: org.gnome.zbrown.Palette.yml
         cache-key: flatpak-builder-${{ github.sha }}
-    - uses: flatpak/flatpak-github-actions/flat-manager@v1
+    - uses: flatpak/flatpak-github-actions/flat-manager@v5
       name: "Deploy"
       with:
         repository: elementary
