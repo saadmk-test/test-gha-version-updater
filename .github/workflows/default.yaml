@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.WORKFLOW_SECRET }}
+          token: ${{ secrets.FINE_GRAINED_TOEKN }}
 
       - name: Run GitHub Action Updater
         uses: saadmk11/github-actions-version-updater@use-pydantic
