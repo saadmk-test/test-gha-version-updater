@@ -26,4 +26,5 @@ jobs:
           pull_request_labels: "dependencies, automated"
           extra_workflow_locations: "outside.yaml, another/two.yaml"
           release_types: "minor, patch"
+          update_version_with: 'release-commit-sha'
 
