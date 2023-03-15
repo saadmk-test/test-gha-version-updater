@@ -16,5 +16,3 @@ jobs:
         uses: saadmk11/github-actions-version-updater@main
         with:
           token: ${{ secrets.FINE_GRAINED_TOEKN }}
-          skip_pull_request: "true"
-
