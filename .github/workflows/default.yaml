@@ -28,4 +28,4 @@ jobs:
           release_types: "minor, patch"
           update_version_with: 'release-commit-sha'
           pull_request_branch: "actions-update"
-          skip_pull_request: 'true'
+          skip_pull_request: 'false'
