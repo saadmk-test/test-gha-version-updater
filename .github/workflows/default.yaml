@@ -27,5 +27,5 @@ jobs:
           extra_workflow_locations: "outside.yaml, another/two.yaml"
           release_types: "minor, patch"
           update_version_with: 'release-commit-sha'
-          pull_request_branch: "master"
+          pull_request_branch: "main"
           skip_pull_request: 'false'
